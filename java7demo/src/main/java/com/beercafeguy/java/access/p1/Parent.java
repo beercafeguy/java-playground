@@ -8,4 +8,8 @@ public class Parent {
     protected  void doProtectedTest(){
         System.out.println("I M doing protected tests");
     }
+
+    public  void doPublicTest(){
+        System.out.println("I M doing public tests");
+    }
 }
