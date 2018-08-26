@@ -1,12 +1,14 @@
 package com.beercafeguy.java.block;
 
 public class Foo {
+
     {
         System.out.println("Ini block 1");
     }
     {
         System.out.println("Ini block 0");
     }
+
 
 
     static {
