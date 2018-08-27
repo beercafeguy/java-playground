@@ -18,7 +18,13 @@ class Hoo extends Foo{
     public void read(){
         System.out.println("Reading Hoo with no exceptions");
     }
+}
 
+class Zoo extends Foo{
+    //following not allowed as we can not have more restrictive access level
+    //void read(){
+    //    System.out.println("Reading Hoo with no exceptions");
+    //}
 }
 
 
