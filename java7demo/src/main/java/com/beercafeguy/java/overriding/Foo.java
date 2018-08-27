@@ -6,6 +6,10 @@ class Foo {
     public void read() throws IOException{
         System.out.println("Reading Foo");
     }
+
+    void follow(){
+        System.out.println("Following");
+    }
 }
 
 class Hoo extends Foo{
@@ -25,6 +29,11 @@ class Zoo extends Foo{
     //void read(){
     //    System.out.println("Reading Hoo with no exceptions");
     //}
+
+    //but a broader access level is allowed
+    public void follow(){
+        System.out.println("Following Zoo");
+    }
 }
 
 
