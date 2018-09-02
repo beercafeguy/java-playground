@@ -14,6 +14,10 @@ public class Teacher {
         this.subjects = subjects;
     }
 
+    /***
+     *  Copy Constructor for teacher
+     * @param teacher
+     */
     public Teacher(Teacher teacher) {
 
         this.id = teacher.getId();
@@ -24,6 +28,15 @@ public class Teacher {
 
         // so for deep copy, create a new instance of HashSet
         this.subjects = new HashSet<String>(teacher.getSubjects());
+    }
+
+    /**
+     *  Copy factory method
+     * @param teacher
+     * @return
+     */
+    public static Teacher newInstance(Teacher teacher){
+        return new Teacher(teacher);
     }
 
     public void setId(int id) {
