@@ -10,7 +10,7 @@ public class ObjectWithoutNew {
         //clone
         //Serialization
         //String and Arrays are generally created without new
-        
+
     }
 }
 
