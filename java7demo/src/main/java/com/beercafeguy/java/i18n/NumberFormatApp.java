@@ -14,7 +14,9 @@ public class NumberFormatApp {
         formats[3]=NumberFormat.getCurrencyInstance(localeIN);
         for (NumberFormat format: formats
              ) {
-            System.out.println(format.format(f1));
+            System.out.println(format.getMaximumFractionDigits()+"|"+format.format(f1));
+            format.setMaximumFractionDigits(5);
+            System.out.println(format.getMaximumFractionDigits()+"|"+format.format(f1));
         }
     }
 }
