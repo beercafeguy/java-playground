@@ -34,5 +34,13 @@ public class FileUtils {
         if(file.exists()) {
             file.renameTo(new File("fileRenames.txt"));
         }
+
+        //list Files
+        File fileDir=new File("C:\\Users\\hchandra\\git\\tmp\\");
+        String[] files=fileDir.list();
+        for (String f:files
+             ) {
+            System.out.println(f);
+        }
     }
 }
