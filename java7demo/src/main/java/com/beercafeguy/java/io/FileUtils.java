@@ -26,8 +26,8 @@ public class FileUtils {
         }
 
         //Delete file
-
-\            fileinDir.delete();
+        if(fileinDir.exists()){
+            fileinDir.delete();
         }
 
         //rename a file
