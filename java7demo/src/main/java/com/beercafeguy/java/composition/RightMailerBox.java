@@ -25,5 +25,5 @@ public class RightMailerBox implements Mailer,Box{
     public void ship() {
         System.out.println("Adding shipping");
     }
-    
+
 }
